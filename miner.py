@@ -7,7 +7,7 @@ resp = Queue(10)
 @gen.coroutine
 def response(message):
     if message is None:
-        print None
+        print(None)
     else:
         bh, b = ast.literal_eval(message)
         bh = BlockHeader.deserialize(bh)
